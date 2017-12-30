@@ -1,13 +1,13 @@
-"""
-Creates a root logger
-"""
+"""Creates a root logger."""
 import logging
 
 
+LOG_FORMAT = "%(asctime)s %(name)-12s %(levelname)-8s %(message)s"
+DATETIME_FORMAT = "%m-%d %H:%M"
+
+
 def setup():
-    """
-    Setup logging engine
-    """
+    """Build logging engine."""
     logging.basicConfig(level=logging.DEBUG,
-                        format='%(asctime)s %(name)-12s %(levelname)-8s %(message)s',
-                        datefmt='%m-%d %H:%M')
+                        format=LOG_FORMAT,
+                        datefmt=DATETIME_FORMAT)
