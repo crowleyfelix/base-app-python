@@ -11,8 +11,8 @@ nose = "*"
 ptpython = "*"
 pylama = "*"
 pylama-pylint = "*"
+pylint-quotes = "*"
 
 
 [packages]
 
-pylint-quotes = "*"
