@@ -1,18 +1,13 @@
-"""
-Module with entry point
-"""
-
+"""Module with entry point."""
 import logging
-import logger
-from application import Application
+from app import logger
+from app.application import Application
 
 LOGGER = logging.getLogger(__name__)
 
 
 def main():
-    """
-    Application entry point
-    """
+    """Application entry point."""
     logger.setup()
     app = Application()
 
